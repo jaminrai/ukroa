@@ -1,0 +1,318 @@
+[2025-12-12 03:39:57] [class-ss-archive-creation-job.php:128] Starting a job; no job is presently running
+[2025-12-12 03:39:57] [class-ss-archive-creation-job.php:129] Here's our task list: setup, discover_urls, fetch_urls, transfer_files_locally, wrapup
+[2025-12-12 03:39:57] [class-ss-archive-creation-job.php:147] Pushing first task to queue: setup
+[2025-12-12 03:39:57] [class-ss-background-process.php:201] Saving to key: wp_archive_creation_job_batch_61325939cfa2920e7df4b08d8f2db898. Data: Array(    [0] => setup)
+[2025-12-12 03:39:58] [class-ss-background-process.php:422] Maybe handling: Site ID: 1
+[2025-12-12 03:39:59] [class-ss-archive-creation-job.php:206] Current task: setup
+[2025-12-12 03:39:59] [class-ss-archive-creation-job.php:220] Performing task: setup
+[2025-12-12 03:39:59] [class-ss-task.php:44] Status message: [setup] Setting up
+[2025-12-12 03:39:59] [class-ss-setup-task.php:33] Creating archive directory: C:\xampp\htdocs\ukroa_git/wp-content/uploads\simply-static\temp-files/simply-static-1-1765510797\
+[2025-12-12 03:39:59] [class-ss-setup-task.php:72] Adding origin URL to queue: http://localhost/ukroa_git/
+[2025-12-12 03:39:59] [class-ss-archive-creation-job.php:223] Task performed: 1
+[2025-12-12 03:39:59] [class-ss-archive-creation-job.php:247] We've found our next task: discover_urls
+[2025-12-12 03:39:59] [class-ss-archive-creation-job.php:206] Current task: discover_urls
+[2025-12-12 03:39:59] [class-ss-archive-creation-job.php:220] Performing task: discover_urls
+[2025-12-12 03:39:59] [class-ss-task.php:44] Status message: [discover_urls] Discovering URLs
+[2025-12-12 03:39:59] [class-ss-crawlers.php:74] Found 18 crawler files
+[2025-12-12 03:40:00] [class-ss-crawler.php:108] Processing batch of 2 URLs for Author URLs crawler
+[2025-12-12 03:40:00] [class-ss-discover-urls-task.php:56] Added 2 URLs via Author URLs Crawler
+[2025-12-12 03:40:00] [class-ss-task.php:44] Status message: [discover_urls] Added 2 URLs via Author URLs Crawler
+[2025-12-12 03:40:00] [class-ss-crawler.php:108] Processing batch of 1 URLs for Homepage URL crawler
+[2025-12-12 03:40:00] [class-ss-discover-urls-task.php:56] Added 1 URLs via Homepage URL Crawler
+[2025-12-12 03:40:00] [class-ss-task.php:44] Status message: [discover_urls] Added 1 URLs via Homepage URL Crawler
+[2025-12-12 03:40:00] [class-ss-crawler.php:108] Processing batch of 14 URLs for Pagination URLs crawler
+[2025-12-12 03:40:00] [class-ss-discover-urls-task.php:56] Added 14 URLs via Pagination URLs Crawler
+[2025-12-12 03:40:00] [class-ss-task.php:44] Status message: [discover_urls] Added 14 URLs via Pagination URLs Crawler
+[2025-12-12 03:40:00] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:00] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:01] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:01] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:02] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:02] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:02] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:03] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:03] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:04] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:04] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:05] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:06] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:06] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:07] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:07] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:08] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:09] [class-ss-plugin-assets-crawler.php:201] Processing batch of 100 URLs for Plugin Assets crawler
+[2025-12-12 03:40:09] [class-ss-plugin-assets-crawler.php:201] Processing batch of 57 URLs for Plugin Assets crawler
+[2025-12-12 03:40:10] [class-ss-plugin-assets-crawler.php:187] Plugin assets crawler added 1857 URLs (streamed)
+[2025-12-12 03:40:10] [class-ss-discover-urls-task.php:56] Added 1857 URLs via Plugin Assets Crawler
+[2025-12-12 03:40:10] [class-ss-task.php:44] Status message: [discover_urls] Added 1857 URLs via Plugin Assets Crawler
+[2025-12-12 03:40:10] [class-ss-crawler.php:108] Processing batch of 57 URLs for Post Type URLs crawler
+[2025-12-12 03:40:10] [class-ss-discover-urls-task.php:56] Added 57 URLs via Post Type URLs Crawler
+[2025-12-12 03:40:10] [class-ss-task.php:44] Status message: [discover_urls] Added 57 URLs via Post Type URLs Crawler
+[2025-12-12 03:40:10] [class-ss-discover-urls-task.php:56] Added 0 URLs via Sitemap URLs Crawler
+[2025-12-12 03:40:10] [class-ss-task.php:44] Status message: [discover_urls] Added 0 URLs via Sitemap URLs Crawler
+[2025-12-12 03:40:10] [class-ss-crawler.php:108] Processing batch of 9 URLs for Taxonomy URLs crawler
+[2025-12-12 03:40:10] [class-ss-discover-urls-task.php:56] Added 9 URLs via Taxonomy URLs Crawler
+[2025-12-12 03:40:10] [class-ss-task.php:44] Status message: [discover_urls] Added 9 URLs via Taxonomy URLs Crawler
+[2025-12-12 03:40:10] [class-ss-theme-assets-crawler.php:184] Processing batch of 100 URLs for Theme Assets crawler
+[2025-12-12 03:40:11] [class-ss-theme-assets-crawler.php:184] Processing batch of 31 URLs for Theme Assets crawler
+[2025-12-12 03:40:11] [class-ss-theme-assets-crawler.php:170] Theme assets crawler added 131 URLs (streamed)
+[2025-12-12 03:40:11] [class-ss-discover-urls-task.php:56] Added 131 URLs via Theme Assets Crawler
+[2025-12-12 03:40:11] [class-ss-task.php:44] Status message: [discover_urls] Added 131 URLs via Theme Assets Crawler
+[2025-12-12 03:40:11] [class-ss-uploads-crawler.php:184] Processing batch of 100 URLs for Uploads Directory crawler
+[2025-12-12 03:40:12] [class-ss-uploads-crawler.php:184] Processing batch of 100 URLs for Uploads Directory crawler
+[2025-12-12 03:40:12] [class-ss-uploads-crawler.php:184] Processing batch of 57 URLs for Uploads Directory crawler
+[2025-12-12 03:40:12] [class-ss-uploads-crawler.php:170] Uploads crawler added 257 URLs (streamed)
+[2025-12-12 03:40:12] [class-ss-discover-urls-task.php:56] Added 257 URLs via Uploads Directory Crawler
+[2025-12-12 03:40:12] [class-ss-task.php:44] Status message: [discover_urls] Added 257 URLs via Uploads Directory Crawler
+[2025-12-12 03:40:12] [class-ss-vendor-files-crawler.php:267] Processing final vendor files batch 1 with 181 files
+[2025-12-12 03:40:12] [class-ss-vendor-files-crawler.php:271] Found 0 vendor file URLs in C:\xampp\htdocs\ukroa_git/wp-content/plugins/my-calendar/vendor
+[2025-12-12 03:40:12] [class-ss-vendor-files-crawler.php:267] Processing final vendor files batch 1 with 113 files
+[2025-12-12 03:40:12] [class-ss-vendor-files-crawler.php:271] Found 0 vendor file URLs in C:\xampp\htdocs\ukroa_git/wp-content/plugins/pdf-embedder/vendor
+[2025-12-12 03:40:12] [class-ss-vendor-files-crawler.php:267] Processing final vendor files batch 1 with 11 files
+[2025-12-12 03:40:12] [class-ss-vendor-files-crawler.php:271] Found 0 vendor file URLs in C:\xampp\htdocs\ukroa_git/wp-content/plugins/simply-static/vendor
+[2025-12-12 03:40:12] [class-ss-discover-urls-task.php:56] Added 0 URLs via Vendor Files Crawler
+[2025-12-12 03:40:12] [class-ss-task.php:44] Status message: [discover_urls] Added 0 URLs via Vendor Files Crawler
+[2025-12-12 03:40:12] [class-ss-wp-includes-crawler.php:160] Processing batch of 1 URLs for Includes Directory crawler
+[2025-12-12 03:40:12] [class-ss-wp-includes-crawler.php:160] Processing batch of 1 URLs for Includes Directory crawler
+[2025-12-12 03:40:13] [class-ss-wp-includes-crawler.php:160] Processing batch of 100 URLs for Includes Directory crawler
+[2025-12-12 03:40:13] [class-ss-wp-includes-crawler.php:160] Processing batch of 100 URLs for Includes Directory crawler
+[2025-12-12 03:40:13] [class-ss-wp-includes-crawler.php:160] Processing batch of 100 URLs for Includes Directory crawler
+[2025-12-12 03:40:14] [class-ss-wp-includes-crawler.php:160] Processing batch of 100 URLs for Includes Directory crawler
+[2025-12-12 03:40:14] [class-ss-wp-includes-crawler.php:160] Processing batch of 100 URLs for Includes Directory crawler
+[2025-12-12 03:40:15] [class-ss-wp-includes-crawler.php:160] Processing batch of 100 URLs for Includes Directory crawler
+[2025-12-12 03:40:15] [class-ss-wp-includes-crawler.php:160] Processing batch of 100 URLs for Includes Directory crawler
+[2025-12-12 03:40:16] [class-ss-wp-includes-crawler.php:160] Processing batch of 100 URLs for Includes Directory crawler
+[2025-12-12 03:40:16] [class-ss-wp-includes-crawler.php:160] Processing batch of 100 URLs for Includes Directory crawler
+[2025-12-12 03:40:16] [class-ss-wp-includes-crawler.php:160] Processing batch of 90 URLs for Includes Directory crawler
+[2025-12-12 03:40:17] [class-ss-wp-includes-crawler.php:149] WP Includes crawler added 992 URLs (streamed)
+[2025-12-12 03:40:17] [class-ss-discover-urls-task.php:56] Added 992 URLs via Includes Directory Crawler
+[2025-12-12 03:40:17] [class-ss-task.php:44] Status message: [discover_urls] Added 992 URLs via Includes Directory Crawler
+[2025-12-12 03:40:17] [class-ss-task.php:44] Status message: [discover_urls] Added 3317 URLs via Crawler
+[2025-12-12 03:40:17] [class-ss-archive-creation-job.php:223] Task performed: 1
+[2025-12-12 03:40:17] [class-ss-archive-creation-job.php:247] We've found our next task: fetch_urls
+[2025-12-12 03:40:17] [class-ss-archive-creation-job.php:206] Current task: fetch_urls
+[2025-12-12 03:40:17] [class-ss-archive-creation-job.php:220] Performing task: fetch_urls
+[2025-12-12 03:40:17] [class-ss-fetch-urls-task.php:72] Total pages: 3318; Pages remaining: 3318
+[2025-12-12 03:40:17] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/
+[2025-12-12 03:40:17] [class-ss-task.php:58] [PAGES STATUS] Remaining:3318; Total: 3318
+[2025-12-12 03:40:17] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:17] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8ea12371b-8xlWRJ.tmp
+[2025-12-12 03:40:17] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/ - Is local asset: No
+[2025-12-12 03:40:17] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?simply_static_page=1
+[2025-12-12 03:40:17] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?simply_static_page=1
+[2025-12-12 03:40:19] [class-ss-url-fetcher.php:146] Filesize: 164892 bytes
+[2025-12-12 03:40:19] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:19] [class-ss-url-fetcher.php:471] New filename for static page: /index.html
+[2025-12-12 03:40:19] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Users\JAMINR~1\AppData\Local\Temp/693b8ea12371b-8xlWRJ.tmp to C:\xampp\htdocs\ukroa_git/wp-content/uploads\simply-static\temp-files/simply-static-1-1765510797/index.html
+[2025-12-12 03:40:19] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2025-12-12 03:40:20] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2025-12-12 03:40:20] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2025-12-12 03:40:21] [class-ss-page.php:128] Checking Content Identical:effb20f1fe9eb6170ea70d1a2aa9368ddb7fc623===. Value: FALSE
+[2025-12-12 03:40:21] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/?author=1
+[2025-12-12 03:40:21] [class-ss-task.php:58] [PAGES STATUS] Remaining:3317; Total: 3318
+[2025-12-12 03:40:21] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:21] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8ea54abf9-vbFXT1.tmp
+[2025-12-12 03:40:21] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?author=1 - Is local asset: No
+[2025-12-12 03:40:21] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?author=1&simply_static_page=2
+[2025-12-12 03:40:21] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?author=1&simply_static_page=2
+[2025-12-12 03:40:22] [class-ss-url-fetcher.php:146] Filesize: 176682 bytes
+[2025-12-12 03:40:22] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:22] [class-ss-url-fetcher.php:471] New filename for static page: /\__qs/cd640aa7ea18/index.html
+[2025-12-12 03:40:22] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Users\JAMINR~1\AppData\Local\Temp/693b8ea54abf9-vbFXT1.tmp to C:\xampp\htdocs\ukroa_git/wp-content/uploads\simply-static\temp-files/simply-static-1-1765510797/\__qs/cd640aa7ea18/index.html
+[2025-12-12 03:40:22] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2025-12-12 03:40:23] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2025-12-12 03:40:23] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2025-12-12 03:40:24] [class-ss-page.php:128] Checking Content Identical:a47eaf2732722542bc323086d926bb3364321e84===. Value: FALSE
+[2025-12-12 03:40:24] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/?author=2
+[2025-12-12 03:40:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:3316; Total: 3318
+[2025-12-12 03:40:24] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8ea87ed75-gNBVMQ.tmp
+[2025-12-12 03:40:24] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?author=2 - Is local asset: No
+[2025-12-12 03:40:24] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?author=2&simply_static_page=3
+[2025-12-12 03:40:24] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?author=2&simply_static_page=3
+[2025-12-12 03:40:26] [class-ss-url-fetcher.php:146] Filesize: 145389 bytes
+[2025-12-12 03:40:26] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:26] [class-ss-url-fetcher.php:471] New filename for static page: /\__qs/3f710d3e02d2/index.html
+[2025-12-12 03:40:26] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Users\JAMINR~1\AppData\Local\Temp/693b8ea87ed75-gNBVMQ.tmp to C:\xampp\htdocs\ukroa_git/wp-content/uploads\simply-static\temp-files/simply-static-1-1765510797/\__qs/3f710d3e02d2/index.html
+[2025-12-12 03:40:26] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2025-12-12 03:40:27] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2025-12-12 03:40:27] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2025-12-12 03:40:27] [class-ss-page.php:128] Checking Content Identical:779e2bbc0ec91dce94d60a3f0938944773a1a0c9===. Value: FALSE
+[2025-12-12 03:40:27] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/page/2/
+[2025-12-12 03:40:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:3315; Total: 3318
+[2025-12-12 03:40:27] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8eab94389-QNbs2N.tmp
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/page/2/ - Is local asset: No
+[2025-12-12 03:40:27] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/page/2/?simply_static_page=4
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/page/2/?simply_static_page=4
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:146] Filesize: 295 bytes
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:222] http_status_code: 404 | content_type: text/html; charset=iso-8859-1
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:250] We weren't able to establish a filename; deleting temp file
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8eab98a7a-cDbreR.tmp
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/page/2/ - Is local asset: No
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/page/2/
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:146] Filesize: 295 bytes
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:222] http_status_code: 404 | content_type: text/html; charset=iso-8859-1
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:250] We weren't able to establish a filename; deleting temp file
+[2025-12-12 03:40:27] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/page/3/
+[2025-12-12 03:40:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:3314; Total: 3318
+[2025-12-12 03:40:27] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8eab9e1c1-cOokMm.tmp
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/page/3/ - Is local asset: No
+[2025-12-12 03:40:27] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/page/3/?simply_static_page=5
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/page/3/?simply_static_page=5
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:146] Filesize: 295 bytes
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:222] http_status_code: 404 | content_type: text/html; charset=iso-8859-1
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:250] We weren't able to establish a filename; deleting temp file
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8eaba2c98-9H9Uq3.tmp
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/page/3/ - Is local asset: No
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/page/3/
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:146] Filesize: 295 bytes
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:222] http_status_code: 404 | content_type: text/html; charset=iso-8859-1
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:250] We weren't able to establish a filename; deleting temp file
+[2025-12-12 03:40:27] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/?cat=4/
+[2025-12-12 03:40:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:3313; Total: 3318
+[2025-12-12 03:40:27] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8eaba86e4-qHXygS.tmp
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?cat=4/ - Is local asset: No
+[2025-12-12 03:40:27] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?cat=4/&simply_static_page=6
+[2025-12-12 03:40:27] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?cat=4/&simply_static_page=6
+[2025-12-12 03:40:28] [class-ss-url-fetcher.php:146] Filesize: 154502 bytes
+[2025-12-12 03:40:28] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:28] [class-ss-url-fetcher.php:471] New filename for static page: /\__qs/ca5fa2b9de6e/index.html
+[2025-12-12 03:40:28] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Users\JAMINR~1\AppData\Local\Temp/693b8eaba86e4-qHXygS.tmp to C:\xampp\htdocs\ukroa_git/wp-content/uploads\simply-static\temp-files/simply-static-1-1765510797/\__qs/ca5fa2b9de6e/index.html
+[2025-12-12 03:40:28] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2025-12-12 03:40:30] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2025-12-12 03:40:30] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2025-12-12 03:40:31] [class-ss-page.php:128] Checking Content Identical:7d59004d1a6684c04b89c5e66ca8a43d8c4415b1===. Value: FALSE
+[2025-12-12 03:40:31] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/?cat=1/
+[2025-12-12 03:40:31] [class-ss-task.php:58] [PAGES STATUS] Remaining:3312; Total: 3318
+[2025-12-12 03:40:31] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:31] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8eaf73617-d421cH.tmp
+[2025-12-12 03:40:31] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?cat=1/ - Is local asset: No
+[2025-12-12 03:40:31] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?cat=1/&simply_static_page=7
+[2025-12-12 03:40:31] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?cat=1/&simply_static_page=7
+[2025-12-12 03:40:32] [class-ss-url-fetcher.php:146] Filesize: 176804 bytes
+[2025-12-12 03:40:32] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:32] [class-ss-url-fetcher.php:471] New filename for static page: /\__qs/7c35d78718b2/index.html
+[2025-12-12 03:40:32] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Users\JAMINR~1\AppData\Local\Temp/693b8eaf73617-d421cH.tmp to C:\xampp\htdocs\ukroa_git/wp-content/uploads\simply-static\temp-files/simply-static-1-1765510797/\__qs/7c35d78718b2/index.html
+[2025-12-12 03:40:33] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2025-12-12 03:40:34] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2025-12-12 03:40:34] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2025-12-12 03:40:34] [class-ss-page.php:128] Checking Content Identical:a8a8267133e1916e7887c24b63ca8183ff56f690===. Value: FALSE
+[2025-12-12 03:40:34] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/?cat=1/page/2/
+[2025-12-12 03:40:34] [class-ss-task.php:58] [PAGES STATUS] Remaining:3311; Total: 3318
+[2025-12-12 03:40:34] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:34] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8eb2f3407-rSn9in.tmp
+[2025-12-12 03:40:34] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?cat=1/page/2/ - Is local asset: No
+[2025-12-12 03:40:34] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?cat=1/page/2/&simply_static_page=8
+[2025-12-12 03:40:35] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?cat=1/page/2/&simply_static_page=8
+[2025-12-12 03:40:37] [class-ss-url-fetcher.php:146] Filesize: 134379 bytes
+[2025-12-12 03:40:37] [class-ss-url-fetcher.php:222] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:37] [class-ss-url-fetcher.php:250] We weren't able to establish a filename; deleting temp file
+[2025-12-12 03:40:37] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8eb52230c-NcJRP8.tmp
+[2025-12-12 03:40:37] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?cat=1/page/2/ - Is local asset: No
+[2025-12-12 03:40:37] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?cat=1/page/2/
+[2025-12-12 03:40:38] [class-ss-url-fetcher.php:146] Filesize: 134379 bytes
+[2025-12-12 03:40:38] [class-ss-url-fetcher.php:222] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:38] [class-ss-url-fetcher.php:250] We weren't able to establish a filename; deleting temp file
+[2025-12-12 03:40:38] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/?cat=1/page/3/
+[2025-12-12 03:40:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:3310; Total: 3318
+[2025-12-12 03:40:38] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8eb6e17ab-LNHVJu.tmp
+[2025-12-12 03:40:38] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?cat=1/page/3/ - Is local asset: No
+[2025-12-12 03:40:38] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?cat=1/page/3/&simply_static_page=9
+[2025-12-12 03:40:38] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?cat=1/page/3/&simply_static_page=9
+[2025-12-12 03:40:41] [class-ss-url-fetcher.php:146] Filesize: 134379 bytes
+[2025-12-12 03:40:41] [class-ss-url-fetcher.php:222] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:41] [class-ss-url-fetcher.php:250] We weren't able to establish a filename; deleting temp file
+[2025-12-12 03:40:41] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8eb93c3a0-JMJdIE.tmp
+[2025-12-12 03:40:41] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?cat=1/page/3/ - Is local asset: No
+[2025-12-12 03:40:41] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?cat=1/page/3/
+[2025-12-12 03:40:43] [class-ss-url-fetcher.php:146] Filesize: 134379 bytes
+[2025-12-12 03:40:43] [class-ss-url-fetcher.php:222] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:43] [class-ss-url-fetcher.php:250] We weren't able to establish a filename; deleting temp file
+[2025-12-12 03:40:43] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/?cat=3/
+[2025-12-12 03:40:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:3309; Total: 3318
+[2025-12-12 03:40:43] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8ebb9482e-ZP9uNX.tmp
+[2025-12-12 03:40:43] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?cat=3/ - Is local asset: No
+[2025-12-12 03:40:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?cat=3/&simply_static_page=10
+[2025-12-12 03:40:43] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?cat=3/&simply_static_page=10
+[2025-12-12 03:40:45] [class-ss-url-fetcher.php:146] Filesize: 148628 bytes
+[2025-12-12 03:40:45] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:45] [class-ss-url-fetcher.php:471] New filename for static page: /\__qs/a7774e3526f1/index.html
+[2025-12-12 03:40:45] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Users\JAMINR~1\AppData\Local\Temp/693b8ebb9482e-ZP9uNX.tmp to C:\xampp\htdocs\ukroa_git/wp-content/uploads\simply-static\temp-files/simply-static-1-1765510797/\__qs/a7774e3526f1/index.html
+[2025-12-12 03:40:45] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2025-12-12 03:40:46] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2025-12-12 03:40:46] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2025-12-12 03:40:47] [class-ss-page.php:128] Checking Content Identical:14fe81852760fb298eab99da6ece790e5d1d82ab===. Value: FALSE
+[2025-12-12 03:40:47] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/?cat=15/
+[2025-12-12 03:40:47] [class-ss-task.php:58] [PAGES STATUS] Remaining:3308; Total: 3318
+[2025-12-12 03:40:47] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:47] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8ebf20348-RaIPws.tmp
+[2025-12-12 03:40:47] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?cat=15/ - Is local asset: No
+[2025-12-12 03:40:47] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?cat=15/&simply_static_page=11
+[2025-12-12 03:40:47] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?cat=15/&simply_static_page=11
+[2025-12-12 03:40:49] [class-ss-url-fetcher.php:146] Filesize: 147625 bytes
+[2025-12-12 03:40:49] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:49] [class-ss-url-fetcher.php:471] New filename for static page: /\__qs/0107baf7a49b/index.html
+[2025-12-12 03:40:49] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Users\JAMINR~1\AppData\Local\Temp/693b8ebf20348-RaIPws.tmp to C:\xampp\htdocs\ukroa_git/wp-content/uploads\simply-static\temp-files/simply-static-1-1765510797/\__qs/0107baf7a49b/index.html
+[2025-12-12 03:40:49] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2025-12-12 03:40:51] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2025-12-12 03:40:51] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2025-12-12 03:40:51] [class-ss-page.php:128] Checking Content Identical:0335fb0de78215ced999c6c6016b5292d6e93958===. Value: FALSE
+[2025-12-12 03:40:51] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/?tag=sakela/
+[2025-12-12 03:40:51] [class-ss-task.php:58] [PAGES STATUS] Remaining:3307; Total: 3318
+[2025-12-12 03:40:51] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:51] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8ec386dc7-SpkVyv.tmp
+[2025-12-12 03:40:51] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?tag=sakela/ - Is local asset: No
+[2025-12-12 03:40:51] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?tag=sakela/&simply_static_page=12
+[2025-12-12 03:40:51] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?tag=sakela/&simply_static_page=12
+[2025-12-12 03:40:53] [class-ss-url-fetcher.php:146] Filesize: 148119 bytes
+[2025-12-12 03:40:53] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:53] [class-ss-url-fetcher.php:471] New filename for static page: /\__qs/46b0123bad3d/index.html
+[2025-12-12 03:40:53] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Users\JAMINR~1\AppData\Local\Temp/693b8ec386dc7-SpkVyv.tmp to C:\xampp\htdocs\ukroa_git/wp-content/uploads\simply-static\temp-files/simply-static-1-1765510797/\__qs/46b0123bad3d/index.html
+[2025-12-12 03:40:53] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2025-12-12 03:40:54] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2025-12-12 03:40:54] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2025-12-12 03:40:55] [class-ss-page.php:128] Checking Content Identical:6749dfcc652fb5aafeeca20410a8b1170eb6af9f===. Value: FALSE
+[2025-12-12 03:40:55] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/?tag=second/
+[2025-12-12 03:40:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:3306; Total: 3318
+[2025-12-12 03:40:55] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8ec766f31-2aXFVd.tmp
+[2025-12-12 03:40:55] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?tag=second/ - Is local asset: No
+[2025-12-12 03:40:55] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?tag=second/&simply_static_page=13
+[2025-12-12 03:40:55] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?tag=second/&simply_static_page=13
+[2025-12-12 03:40:57] [class-ss-url-fetcher.php:146] Filesize: 147429 bytes
+[2025-12-12 03:40:57] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:40:57] [class-ss-url-fetcher.php:471] New filename for static page: /\__qs/7a9af22ed7c4/index.html
+[2025-12-12 03:40:57] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Users\JAMINR~1\AppData\Local\Temp/693b8ec766f31-2aXFVd.tmp to C:\xampp\htdocs\ukroa_git/wp-content/uploads\simply-static\temp-files/simply-static-1-1765510797/\__qs/7a9af22ed7c4/index.html
+[2025-12-12 03:40:57] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2025-12-12 03:40:58] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2025-12-12 03:40:58] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2025-12-12 03:40:59] [class-ss-page.php:128] Checking Content Identical:73c1670715931c0b2c2e3c7c7fab0636b3162dfb===. Value: FALSE
+[2025-12-12 03:40:59] [class-ss-fetch-urls-task.php:79] URL: http://localhost/ukroa_git/?tag=test/
+[2025-12-12 03:40:59] [class-ss-task.php:58] [PAGES STATUS] Remaining:3305; Total: 3318
+[2025-12-12 03:40:59] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2025-12-12 03:40:59] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\JAMINR~1\AppData\Local\Temp/693b8ecb088ae-mQ4LCg.tmp
+[2025-12-12 03:40:59] [class-ss-url-fetcher.php:101] URL: http://localhost/ukroa_git/?tag=test/ - Is local asset: No
+[2025-12-12 03:40:59] [class-ss-page-handler.php:53] URL Prepared:http://localhost/ukroa_git/?tag=test/&simply_static_page=14
+[2025-12-12 03:40:59] [class-ss-url-fetcher.php:489] Fetching URL: http://localhost/ukroa_git/?tag=test/&simply_static_page=14
+[2025-12-12 03:41:02] [class-ss-url-fetcher.php:146] Filesize: 147419 bytes
+[2025-12-12 03:41:02] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-12-12 03:41:02] [class-ss-url-fetcher.php:471] New filename for static page: /\__qs/90a773cba88a/index.html
+[2025-12-12 03:41:02] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Users\JAMINR~1\AppData\Local\Temp/693b8ecb088ae-mQ4LCg.tmp to C:\xampp\htdocs\ukroa_git/wp-content/uploads\simply-static\temp-files/simply-static-1-1765510797/\__qs/90a773cba88a/index.html
+[2025-12-12 03:41:02] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2025-12-12 03:41:02] [class-ss-admin-rest.php:1187] Received request to cancel static archive generation
+[2025-12-12 03:41:02] [class-ss-archive-creation-job.php:427] Status message: [cancel] Export cancelled.
+[2025-12-12 03:41:02] [class-ss-task.php:44] Status message: [cancel] Cancelling job
+[2025-12-12 03:41:02] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
+[2025-12-12 03:41:03] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2025-12-12 03:41:03] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2025-12-12 03:41:03] [class-ss-page.php:128] Checking Content Identical:5d81e7fd0426053ab97eb05ef5e2e1a6e65bed44===. Value: FALSE
+[2025-12-12 03:41:05] [class-ss-admin-rest.php:1187] Received request to cancel static archive generation
+[2025-12-12 03:41:05] [class-ss-archive-creation-job.php:427] Status message: [cancel] Export cancelled.
+[2025-12-12 03:41:05] [class-ss-archive-creation-job.php:343] Can't cancel; job is done
+[2025-12-12 03:41:05] [class-ss-background-process.php:422] Maybe handling: Site ID: 1
+[2025-12-12 03:41:06] [class-ss-background-process.php:422] Maybe handling: Site ID: 1
