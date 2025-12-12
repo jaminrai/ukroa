@@ -1,0 +1,947 @@
+# Spice Post Slider
+# Copyright 2021 ...
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: "
+"Spice Post Slider "
+"v1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"Translator Name "
+"<translations@example."
+"com>\n"
+"POT-Creation-Date: "
+"2024-12-20 16:44+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your "
+"Name <you@example.com>\n"
+"Language-Team: Your Team "
+"<translations@example."
+"com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/"
+"plain; charset=UTF-8\n"
+"Content-Transfer-"
+"Encoding: 8bit\n"
+"Plural-Forms: "
+"nplurals=2; plural=n != "
+"1;\n"
+"X-Textdomain-Support: "
+"yesX-Generator: Poedit "
+"1.6.4\n"
+"X-Poedit-SourceCharset: "
+"UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;"
+"esc_html_x:1,2c;"
+"esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;"
+"esc_attr__;_ex:1,2c;"
+"_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;"
+"_n:1,2;_n_noop:1,2;"
+"__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-"
+"SearchPath-0: .\n"
+
+#: include/admin/sps-about-page.php:19
+msgid "Fully Responsive"
+msgstr ""
+
+#: include/admin/sps-about-page.php:22
+msgid "User-friendly Panel"
+msgstr ""
+
+#: include/admin/sps-about-page.php:25
+msgid ""
+"WP themes Compatible"
+msgstr ""
+
+#: include/admin/sps-about-page.php:28
+msgid "Beautiful Layouts"
+msgstr ""
+
+#: include/admin/sps-about-page.php:31
+#: include/admin/sps-about-page.php:92
+msgid "Shortcode Generator"
+msgstr ""
+
+#: include/admin/sps-about-page.php:34
+msgid ""
+"Post Category Filter"
+msgstr ""
+
+#: include/admin/sps-about-page.php:37
+#: include/admin/sps-about-page.php:107
+msgid "Color & Typography"
+msgstr ""
+
+#: include/admin/sps-about-page.php:40
+msgid ""
+"Fast & Active Support"
+msgstr ""
+
+#: include/admin/sps-about-page.php:45
+msgid "Documentations"
+msgstr ""
+
+#: include/admin/sps-about-page.php:48
+#: include/admin/sps-cpt.php:118
+msgid "Get Support"
+msgstr ""
+
+#: include/admin/sps-about-page.php:53
+msgid "UPGRADE TO PRO"
+msgstr ""
+
+#: include/admin/sps-about-page.php:59
+msgid ""
+"About Post Slider Free "
+"Plugin"
+msgstr ""
+
+#: include/admin/sps-about-page.php:60
+msgid ""
+"This plugin allows you "
+"to showcase your blog "
+"posts in a beautiful "
+"slider with multiple "
+"options, It is "
+"responsive ready so it "
+"will work perfectly on "
+"different devices like "
+"mobile and iPad."
+msgstr ""
+
+#: include/admin/sps-about-page.php:63
+msgid ""
+"View Demo With Free "
+"Features"
+msgstr ""
+
+#: include/admin/sps-about-page.php:66
+msgid "Go To Pro"
+msgstr ""
+
+#: include/admin/sps-about-page.php:71
+msgid ""
+"Powerful Pro Features"
+msgstr ""
+
+#: include/admin/sps-about-page.php:72
+msgid ""
+"The pro plugin allows "
+"you to showcase your "
+"blog posts in a "
+"beautiful slider with "
+"multiple design layouts "
+"using animation effects. "
+"You can also use "
+"different typography on "
+"different devices."
+msgstr ""
+
+#: include/admin/sps-about-page.php:75
+msgid "View Demo"
+msgstr ""
+
+#: include/admin/sps-about-page.php:82
+#: include/admin/sps-meta-box.php:94
+msgid "General"
+msgstr ""
+
+#: include/admin/sps-about-page.php:83
+msgid "Free"
+msgstr ""
+
+#: include/admin/sps-about-page.php:84
+msgid "Pro"
+msgstr ""
+
+#: include/admin/sps-about-page.php:87
+msgid "Permium Support"
+msgstr ""
+
+#: include/admin/sps-about-page.php:97
+msgid "Designed Layouts"
+msgstr ""
+
+#: include/admin/sps-about-page.php:98
+msgid "3"
+msgstr ""
+
+#: include/admin/sps-about-page.php:99
+msgid "25+"
+msgstr ""
+
+#: include/admin/sps-about-page.php:102
+msgid "Video Support"
+msgstr ""
+
+#: include/admin/sps-about-page.php:109
+msgid "Advanced"
+msgstr ""
+
+#: include/admin/sps-about-page.php:112
+msgid "Animation Effects"
+msgstr ""
+
+#: include/admin/sps-about-page.php:117
+msgid ""
+"Navigation & Bullets "
+"Style"
+msgstr ""
+
+#: include/admin/sps-about-page.php:122
+msgid "Custom CSS Field"
+msgstr ""
+
+#: include/admin/sps-cpt.php:20
+#: include/admin/sps-cpt.php:21
+#: include/admin/sps-meta-box.php:108
+msgid "Post Slider"
+msgstr ""
+
+#: include/admin/sps-cpt.php:22
+msgid "Add New"
+msgstr ""
+
+#: include/admin/sps-cpt.php:23
+msgid "Add New Post Slider"
+msgstr ""
+
+#: include/admin/sps-cpt.php:24
+msgid "Edit Post Slider"
+msgstr ""
+
+#: include/admin/sps-cpt.php:25
+msgid "New Post Slider"
+msgstr ""
+
+#: include/admin/sps-cpt.php:26
+msgid "All Post Slider"
+msgstr ""
+
+#: include/admin/sps-cpt.php:27
+msgid "View Post Slider"
+msgstr ""
+
+#: include/admin/sps-cpt.php:28
+msgid "Search Post Slider"
+msgstr ""
+
+#: include/admin/sps-cpt.php:29
+msgid ""
+"No posts slider found"
+msgstr ""
+
+#: include/admin/sps-cpt.php:30
+msgid ""
+"No posts slider found in "
+"the Trash"
+msgstr ""
+
+#: include/admin/sps-cpt.php:81
+msgid ""
+"Post Slider Settings"
+msgstr ""
+
+#: include/admin/sps-cpt.php:82
+msgid ""
+"Post Slider  Shortcode"
+msgstr ""
+
+#: include/admin/sps-cpt.php:83
+msgid "Post Slider Review"
+msgstr ""
+
+#: include/admin/sps-cpt.php:84
+msgid "Post Slider Support"
+msgstr ""
+
+#: include/admin/sps-cpt.php:85
+msgid ""
+"Post Slider Documentation"
+msgstr ""
+
+#: include/admin/sps-cpt.php:86
+msgid ""
+"Post Slider Upgrade to "
+"Pro"
+msgstr ""
+
+#: include/admin/sps-cpt.php:107
+msgid "Rate Us"
+msgstr ""
+
+#: include/admin/sps-cpt.php:129
+msgid "Documentation"
+msgstr ""
+
+#: include/admin/sps-cpt.php:140
+msgid "Upgrade Now"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:95
+#: include/admin/sps-meta-box.php:406
+msgid "Navigation"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:96
+msgid "Typography"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:97
+msgid "Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:103
+msgid ""
+"Select Post Slider Layout"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:104
+msgid ""
+"Select slider type for "
+"project creation"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:107
+msgid "Banner Slider"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:109
+msgid "Video Slider"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:116
+#: include/admin/sps-meta-box.php:157
+msgid "Design/Layout"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:117
+#: include/admin/sps-meta-box.php:158
+msgid ""
+"Choose your favourite "
+"design"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:197
+msgid "Video"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:198
+msgid "Upload your video"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:200
+msgid ""
+"Upload your file using "
+"the button"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:202
+msgid "Upload File"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:209
+#: include/view/banner-post-slider.php:39
+#: include/view/video-slider.php:30
+msgid "Categories"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:210
+msgid ""
+"Select categories to "
+"display the slider."
+"(Default: All)"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:222
+msgid "Order"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:223
+msgid ""
+"Sort in ascending or "
+"descending order."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:226
+msgid "Ascending Order"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:227
+msgid "Descending Order"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:232
+msgid "Number"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:233
+msgid ""
+"Enter the number of "
+"posts to display. "
+"(Default is 4 )"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:238
+msgid "Post Item"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:239
+msgid ""
+"Choose post items per "
+"page."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:246
+msgid "Size"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:247
+msgid ""
+"Select the size of your "
+"images."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:250
+msgid ""
+"Thumbnail - 150 x 150"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:251
+msgid "Medium - 300 x 300"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:252
+msgid ""
+"Medium Large - 768 x 0"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:253
+msgid "Large - 1024 x 1024"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:254
+msgid ""
+"1536x1536 - 1536 x 1536"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:255
+msgid ""
+"2048x2048 - 2048 x 2048"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:256
+msgid "Full"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:261
+msgid "Date"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:262
+msgid ""
+"Enable or disable the "
+"date."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:266
+#: include/admin/sps-meta-box.php:279
+#: include/admin/sps-meta-box.php:292
+#: include/admin/sps-meta-box.php:305
+#: include/admin/sps-meta-box.php:332
+#: include/admin/sps-meta-box.php:346
+#: include/admin/sps-meta-box.php:360
+msgid "Yes"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:268
+#: include/admin/sps-meta-box.php:281
+#: include/admin/sps-meta-box.php:294
+#: include/admin/sps-meta-box.php:307
+#: include/admin/sps-meta-box.php:334
+#: include/admin/sps-meta-box.php:348
+#: include/admin/sps-meta-box.php:362
+msgid "No"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:274
+msgid "Category"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:275
+msgid ""
+"Enable or disable the "
+"category."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:287
+msgid "Comments"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:288
+msgid ""
+"Enable or disable the "
+"comments."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:300
+msgid "Author"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:301
+msgid ""
+"Enable or disable the "
+"author."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:313
+msgid "Read More Text"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:314
+msgid ""
+"Enter your custom text "
+"for the read more button."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:316
+#: include/admin/sps-meta-box.php:638
+msgid "Read More"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:320
+msgid "Height"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:321
+msgid ""
+"Enter the height of the "
+"slider."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:327
+msgid ""
+"Enable/Disable Title"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:328
+msgid ""
+"Enable or disable the "
+"title."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:341
+msgid ""
+"Enable/Disable "
+"Description"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:342
+msgid ""
+"Enable or disable the "
+"description."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:355
+msgid ""
+"Enable/Disable Overlay"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:356
+msgid ""
+"Enable or disable the "
+"slider overlay."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:369
+msgid "Opacity"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:370
+msgid ""
+"Enter the opacity of the "
+"slider image. (Default "
+"is 0.5 )"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:376
+msgid "Padding"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:377
+msgid ""
+"Enter the top & bottom "
+"padding of the slider "
+"section."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:380
+msgid "Top"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:381
+msgid "Bottom"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:391
+msgid "Speed"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:392
+msgid ""
+"Enter the transition "
+"speed of the slides."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:399
+msgid "Navigation Style"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:400
+msgid ""
+"Select navigation style "
+"for post slider."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:404
+msgid "None"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:405
+msgid "Bullets"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:407
+msgid "Both"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:419
+msgid "Post Title"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:420
+msgid ""
+"Typography for the post "
+"title."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:423
+#: include/admin/sps-meta-box.php:495
+#: include/admin/sps-meta-box.php:568
+#: include/admin/sps-meta-box.php:641
+msgid "Font Family"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:432
+#: include/admin/sps-meta-box.php:504
+#: include/admin/sps-meta-box.php:577
+#: include/admin/sps-meta-box.php:650
+msgid "Font Size in px"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:444
+#: include/admin/sps-meta-box.php:464
+#: include/admin/sps-meta-box.php:517
+#: include/admin/sps-meta-box.php:590
+#: include/admin/sps-meta-box.php:663
+msgid "Line Height in px"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:454
+#: include/admin/sps-meta-box.php:526
+#: include/admin/sps-meta-box.php:599
+#: include/admin/sps-meta-box.php:673
+msgid "Font Weight"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:456
+#: include/admin/sps-meta-box.php:528
+#: include/admin/sps-meta-box.php:601
+#: include/admin/sps-meta-box.php:675
+msgid "100"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:457
+#: include/admin/sps-meta-box.php:529
+#: include/admin/sps-meta-box.php:602
+#: include/admin/sps-meta-box.php:676
+msgid "200"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:458
+#: include/admin/sps-meta-box.php:530
+#: include/admin/sps-meta-box.php:603
+#: include/admin/sps-meta-box.php:677
+msgid "300"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:459
+#: include/admin/sps-meta-box.php:531
+#: include/admin/sps-meta-box.php:604
+#: include/admin/sps-meta-box.php:678
+msgid "400"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:460
+#: include/admin/sps-meta-box.php:532
+#: include/admin/sps-meta-box.php:605
+#: include/admin/sps-meta-box.php:679
+msgid "500"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:461
+#: include/admin/sps-meta-box.php:533
+#: include/admin/sps-meta-box.php:606
+#: include/admin/sps-meta-box.php:680
+msgid "600"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:462
+#: include/admin/sps-meta-box.php:534
+#: include/admin/sps-meta-box.php:607
+#: include/admin/sps-meta-box.php:681
+msgid "700"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:463
+#: include/admin/sps-meta-box.php:535
+#: include/admin/sps-meta-box.php:608
+#: include/admin/sps-meta-box.php:682
+msgid "800"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:471
+#: include/admin/sps-meta-box.php:544
+#: include/admin/sps-meta-box.php:617
+#: include/admin/sps-meta-box.php:691
+msgid "Font style"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:473
+#: include/admin/sps-meta-box.php:546
+#: include/admin/sps-meta-box.php:619
+#: include/admin/sps-meta-box.php:693
+msgid "Normal"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:474
+#: include/admin/sps-meta-box.php:547
+#: include/admin/sps-meta-box.php:620
+#: include/admin/sps-meta-box.php:694
+msgid "Italic"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:478
+#: include/admin/sps-meta-box.php:551
+#: include/admin/sps-meta-box.php:624
+#: include/admin/sps-meta-box.php:698
+msgid "Text Transform"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:480
+#: include/admin/sps-meta-box.php:553
+#: include/admin/sps-meta-box.php:626
+#: include/admin/sps-meta-box.php:700
+msgid "Default"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:481
+#: include/admin/sps-meta-box.php:554
+#: include/admin/sps-meta-box.php:627
+#: include/admin/sps-meta-box.php:701
+msgid "Capitalize"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:482
+#: include/admin/sps-meta-box.php:555
+#: include/admin/sps-meta-box.php:628
+#: include/admin/sps-meta-box.php:702
+msgid "Lowercase"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:483
+#: include/admin/sps-meta-box.php:556
+#: include/admin/sps-meta-box.php:629
+#: include/admin/sps-meta-box.php:703
+msgid "Uppercase"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:492
+msgid "Post Content"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:493
+msgid ""
+"Typography for the post "
+"content."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:536
+#: include/admin/sps-meta-box.php:609
+#: include/admin/sps-meta-box.php:683
+msgid "900"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:565
+msgid "Post Meta"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:566
+msgid ""
+"Typography for the post "
+"meta."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:639
+msgid ""
+"Typography for the read "
+"more button."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:713
+msgid "Icon Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:714
+msgid ""
+"You can change font "
+"awesome icon color."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:720
+msgid "Meta Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:721
+msgid ""
+"You can change meta "
+"color."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:727
+msgid "Meta Hover Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:728
+msgid ""
+"You can change meta "
+"hover color."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:734
+msgid "Title Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:735
+msgid ""
+"You can change title "
+"color."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:741
+msgid "Title Hover Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:742
+msgid ""
+"You can change title "
+"hover color."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:748
+msgid "Content Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:749
+msgid ""
+"You can change content "
+"color."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:755
+msgid ""
+"Button Background Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:756
+msgid ""
+"You can change button "
+"background color."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:762
+msgid "Button Text Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:763
+msgid ""
+"You can change button "
+"text color."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:769
+msgid ""
+"Button Background Hover "
+"Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:770
+msgid ""
+"You can change button "
+"background hover color."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:776
+msgid ""
+"Button Text Hover Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:777
+msgid ""
+"You can change button "
+"text hover color."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:783
+msgid ""
+"Navigation/Bullets Hover "
+"Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:784
+msgid ""
+"You can change "
+"navigation/bullets color."
+msgstr ""
+
+#: include/admin/sps-meta-box.php:791
+msgid "Image Overlay Color"
+msgstr ""
+
+#: include/admin/sps-meta-box.php:792
+msgid ""
+"You can change overlay "
+"color of the slider "
+"image."
+msgstr ""
+
+#: include/admin/sps-shortcode-generator.php:3
+msgid ""
+"Use below shortcode to "
+"publish Post Slider"
+msgstr ""
+
+#: include/view/banner-post-slider.php:49
+#: include/view/video-slider.php:71
+msgid " Comments"
+msgstr ""

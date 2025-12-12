@@ -1,0 +1,194 @@
+.spice-col-3 {
+    width: 50%;
+    float: left;
+}
+.spice-col-2 {
+    width: 58.66%;
+    float: left;
+}
+.spice-col-4 {
+    width: 41.33%;
+    float: left;
+}
+.sps-about-page {
+    padding-top: 30px;
+}
+.sps-about-page a:focus {
+    box-shadow: none;
+}
+.sps-about-page p {
+    color: #85879e;
+}
+.sps-about-img img {
+    padding: 0 50px 30px 50px;
+}
+.sps-about-page .about-page-content {
+    padding: 0px 15px 0;
+    margin-top: 10px;
+    overflow: auto;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+}
+.sps-about-features {
+    padding: 50px 50px 30px 50px;
+    display: inline-block;
+}
+.sps-about-features .sps-about-feat-box {
+    background-color: #fff;
+    padding: 20px;
+    width: 245px;
+    float: left;
+    margin: 0 0 18px 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0 #dddddd;
+}
+.sps-about-features .sps-about-feat-box span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    padding: 10px;
+}
+.sps-about-features .sps-about-feat-box i {
+    color: #ff6f61;
+}
+.sps-about-doc-support {
+    display: inline-block;
+    padding: 0px 50px 0 50px;
+    margin: 0 150px;
+    text-align: center;
+}
+.sps-about-doc-support .sps-about-docsup-box {
+    background-color: #fff;
+    padding: 25px;
+    width: 235px;
+    float: left;
+    margin: 0 0 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ff6f61;
+}
+.sps-about-doc-support .sps-about-docsup-box a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    padding: 10px;
+    text-decoration: none;
+}
+.sps-about-doc-support .sps-about-docsup-box i {
+    color: #85879e;
+}
+.sps-about-upgrade {
+    display: inline-block;
+    padding: 20px 50px 30px 50px;
+    margin: 0 150px;
+    text-align: center;
+}
+.sps-about-upgrade .sps-about-upgrade-pro-box {
+    background-color: #455a64;
+    padding: 25px;
+    width: 545px;
+    float: left;
+    margin: 0 0 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+}
+.sps-about-upgrade .sps-about-upgrade-pro-box a {
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+.sps-about-free-plugin, .sps-about-powerful-feature {
+    margin: 0 50px 25px 0;
+    background-color: #fff;
+    padding: 35px 50px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 2px 0 #b7b7b7;
+}
+.sps-about-free-plugin span, .sps-about-powerful-feature span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+.sps-about-free-plugin p, .sps-about-powerful-feature p {
+    font-size: 16px;
+    font-weight: 500;
+}
+.sps-about-button, .sps-about-powerful-pro {
+    display: inline-block;
+    padding: 15px 0 0 0;
+    text-align: center;
+}
+.sps-about-button .sps-about-free-btn {
+    background-color: #455a64;
+    padding: 12px 28px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 0 15px 0;
+}
+.sps-about-button .sps-about-go-pro-btn {
+    background-color: #ff6f61;
+    padding: 12px 28px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 auto;
+    width: 100px;
+}
+.sps-about-button .sps-about-free-btn a, .sps-about-button .sps-about-go-pro-btn a {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+.sps-about-powerful-pro .sps-about-powerful-btn {
+    background-color: #455a64;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 40px;
+    width: 100px;
+}
+.sps-about-powerful-pro .sps-about-powerful-btn a {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+.sps-about-freepro-compare  {
+    margin: 0 50px 30px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+.sps-about-freepro-compare table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.sps-about-freepro-compare td, .sps-about-freepro-compare th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px 28px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sps-about-freepro-compare td {
+    color: #85879e;
+}
+.sps-about-freepro-compare td.table-free-icon {
+    color: #ff6f61;
+    text-align: center;
+}
+.sps-about-freepro-compare td.table-pro-icon {
+    color: #46b450;
+    text-align: center;
+}
+.sps-about-freepro-compare .table-td-content { 
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.sps-about-freepro-compare .table-free-head, .sps-about-freepro-compare .table-pro-head {
+    text-align: center;
+}

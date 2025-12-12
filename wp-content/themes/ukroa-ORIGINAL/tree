@@ -1,0 +1,35 @@
+tree
+ukroa-theme/
+├── assets/
+│   ├── css/
+│   │   ├── dynamic-style.php
+│   │   └── style.css
+│   ├── images/
+│   │   ├── arrow1.png
+│   │   ├── arrow2.png
+│   │   ├── cultural-event.jpg
+│   │   ├── about-teaser.jpg
+│   │   ├── dholjhyamta.png
+│   │   ├── footerhead.png
+│   │   ├── footerimg.png
+│   │   ├── headerbanner.jpg
+│   │   └── logo.png
+│   ├── js/
+│   │   └── script.js
+│   └── downloads/
+│       └── press-kit.pdf
+├── languages/
+│   └── ukroa.pot (optional, for translations)
+├── archive.php
+├── comments.php
+├── footer.php
+├── functions.php
+├── header.php
+├── index.php
+├── page.php
+├── screenshot.png
+├── search.php
+├── sidebar.php
+├── single.php
+└── style.css (root-level, includes theme header)
+ 

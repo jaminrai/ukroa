@@ -1,0 +1,329 @@
+<?php
+/**
+ * Conditional functions. Boolean functions testing calendar and event conditions.
+ *
+ * @category Utilities
+ * @package  My Calendar
+ * @author   Joe Dolson
+ * @license  GPLv3
+ * @link     https://www.joedolson.com/my-calendar/
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+/**
+ * Determine whether an event is recurring.
+ *
+ * @param object $event Event object.
+ *
+ * @return bool
+ */
+function mc_is_recurring( $event ) {
+	$is_recurring = ( ! ( 'S' === $event->event_recur || 'S1' === $event->event_recur ) ) ? true : false;
+
+	return $is_recurring;
+}
+
+/**
+ * Test an event and see if it's an all day event.
+ *
+ * @param object $event Event object.
+ *
+ * @return boolean
+ */
+function mc_is_all_day( $event ) {
+
+	return ( '00:00:00' === $event->event_time && '23:59:59' === $event->event_endtime ) ? true : false;
+}
+
+/**
+ * Check whether using custom or stock icons.
+ *
+ * @return boolean
+ */
+function mc_is_custom_icon() {
+	$on   = ( WP_DEBUG ) ? false : get_transient( 'mc_custom_icons' );
+	$dir  = trailingslashit( dirname( __DIR__, 1 ) );
+	$base = trailingslashit( basename( $dir ) );
+	if ( str_contains( $dir, 'my-calendar/src' ) ) {
+		$base = 'my-calendar/' . $base;
+	}
+	$custom = ( file_exists( str_replace( $base, '', $dir ) . 'my-calendar-custom/icons' ) );
+	if ( ! $custom ) {
+		// backcompat for old icon directories.
+		$custom = ( file_exists( str_replace( $base, '', $dir ) . 'my-calendar-custom/icons' ) );
+	}
+	$return = false;
+	if ( $on && $custom ) {
+		$return = true;
+	} else {
+		if ( $custom ) {
+			$results = mc_directory_list( str_replace( $base, '', $dir ) . 'my-calendar-custom/icons' );
+			if ( empty( $results ) ) {
+				$results = mc_directory_list( str_replace( $base, '', $dir ) . 'my-calendar-custom' );
+				if ( empty( $results ) ) {
+					$return = false;
+				}
+			} else {
+				$return = true;
+			}
+			if ( ! WP_DEBUG ) {
+				set_transient( 'mc_custom_icons', true, HOUR_IN_SECONDS );
+			}
+		}
+	}
+
+	return $return;
+}
+
+/**
+ * Test whether currently mobile using wp_is_mobile() with custom filter
+ *
+ * @return boolean
+ */
+function mc_is_mobile() {
+	$mobile = false;
+	if ( function_exists( 'wp_is_mobile' ) ) {
+		$mobile = wp_is_mobile();
+	}
+	/**
+	 * Add custom logic to detect mobile environments for My Calendar.
+	 *
+	 * @hook mc_is_mobile
+	 *
+	 * @param bool $mobile true if mobile user agent detected.
+	 *
+	 * @return bool
+	 */
+	return apply_filters( 'mc_is_mobile', $mobile );
+}
+
+/**
+ * Provides a filter for custom dev. Not used in core.
+ *
+ * @return boolean
+ */
+function mc_is_tablet() {
+	/**
+	 * Add custom logic to detect tablet environments for My Calendar.
+	 *
+	 * @hook mc_is_tablet
+	 *
+	 * @param bool $tablet true if mobile user agent detected. Default false.
+	 *
+	 * @return bool
+	 */
+	return apply_filters( 'mc_is_tablet', false );
+}
+
+
+/**
+ * Check whether this is a valid preview scenario.
+ *
+ * @return boolean
+ */
+function mc_is_preview() {
+	if ( isset( $_GET['mc_id'] ) && isset( $_GET['preview'] ) && 'true' === $_GET['preview'] && current_user_can( 'mc_manage_events' ) ) {
+		$nonce = sanitize_text_field( wp_unslash( $_GET['mcpreviewnonce'] ) );
+		if ( ! wp_verify_nonce( $nonce, 'mcpreviewnonce' ) ) {
+			return false;
+		}
+		return true;
+	}
+
+	return false;
+}
+
+/**
+ * Check whether an event has a category.
+ *
+ * @param object|int $event Event object or ID.
+ * @param int|string $category category ID or name.
+ *
+ * @return bool
+ */
+function mc_has_category( $event, $category ) {
+	$categories = mc_get_categories( $event, 'ids' );
+	foreach ( $categories as $cat ) {
+		if ( is_int( $category ) ) {
+			if ( $category === $cat->category_id ) {
+				return true;
+			}
+		} elseif ( is_string( $category ) ) {
+			if ( $category === $cat->category_name ) {
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+
+/**
+ * Check whether this event is targeted for an iFrame.
+ *
+ * @return boolean
+ */
+function mc_is_iframe() {
+	if ( isset( $_GET['iframe'] ) && 'true' === $_GET['iframe'] && isset( $_GET['mc_id'] ) ) {
+		return true;
+	}
+
+	return false;
+}
+
+/**
+ * Check whether this event is supposed to show template output.
+ *
+ * @return boolean
+ */
+function mc_is_tag_view() {
+	if ( isset( $_GET['showtags'] ) && 'true' === $_GET['showtags'] && current_user_can( 'mc_add_events' ) ) {
+		return true;
+	}
+
+	return false;
+}
+
+/**
+ * Identify whether a given file is a custom style or a core style
+ *
+ * @param string $filename File name..
+ *
+ * @return boolean
+ */
+function mc_is_custom_style( $filename ) {
+	if ( 0 === strpos( $filename, 'mc_custom_' ) ) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+/**
+ * Check whether the current key refers to a core template
+ *
+ * @param string $key Template unique key.
+ *
+ * @return boolean
+ */
+function mc_is_core_template( $key ) {
+	switch ( $key ) {
+		case 'grid':
+		case 'details':
+		case 'list':
+		case 'mini':
+		case 'card':
+			$return = true;
+			break;
+		default:
+			$return = false;
+	}
+
+	return $return;
+}
+
+/**
+ * Check whether a view is a singular event view.
+ *
+ * @return bool
+ */
+function mc_is_single_event() {
+	if ( is_singular( 'mc-events' ) ) {
+		return true;
+	}
+	if ( isset( $_GET['mc_id'] ) && mc_valid_id( $_GET['mc_id'] ) ) {
+		return true;
+	}
+
+	return false;
+}
+
+/**
+ * Determine whether event is published.
+ *
+ * @param object $event Event object.
+ *
+ * @return boolean
+ */
+function mc_event_published( $event ) {
+	$state = mc_event_states_type( $event->event_approved );
+	if ( 'public' === $state || is_user_logged_in() && 'private' === $state ) {
+		return true;
+	}
+
+	return false;
+}
+
+/**
+ * Check whether an event should be hidden (privacy)
+ *
+ * @param object $event Event object.
+ *
+ * @return boolean
+ */
+function mc_event_is_hidden( $event ) {
+	if ( ! is_object( $event ) ) {
+		return false;
+	}
+	// Also hide events that are unpublished if the current user does not have permission to edit.
+	if ( ! mc_event_published( $event ) && ! mc_can_edit_event( $event->event_id ) ) {
+		return true;
+	}
+	$category = $event->event_category;
+	$private  = mc_get_private_categories();
+	/**
+	 * Filter whether an event is visible to the current user.
+	 *
+	 * @hook mc_user_can_see_private_events
+	 *
+	 * @param {bool}   $can_see 'true' if the event should be shown.
+	 * @param {object} $event Event object.
+	 *
+	 * @return {bool}
+	 */
+	$can_see = apply_filters( 'mc_user_can_see_private_events', is_user_logged_in(), $event );
+	$state   = mc_event_states_type( $event->event_approved );
+	if ( ( in_array( $category, $private, true ) || 'private' === $state ) && ! $can_see ) {
+
+		return true;
+	}
+
+	return false;
+}
+
+/**
+ * Check whether a given output field should be displayed.
+ *
+ * @param string         $feature Feature key.
+ * @param string         $type Display type.
+ * @param object|boolean $event Event if in event context.
+ *
+ * @return bool
+ */
+function mc_output_is_visible( $feature, $type, $event = false ) {
+	// Map either calendar popup or list to main settings.
+	$type   = ( 'calendar' === $type || 'list' === $type ) ? 'main' : $type;
+	$option = mc_get_option( 'display_' . $type );
+	if ( ! is_array( $option ) ) {
+		$display_type = 'display_' . $type;
+		$option       = ( isset( mc_default_options()[ $display_type ] ) ) ? mc_default_options()[ $display_type ] : array();
+	}
+	$return = false;
+	if ( in_array( $feature, $option, true ) ) {
+		$return = true;
+	}
+	/**
+	 * Filter whether any given piece of information should be output.
+	 *
+	 * @param {bool}           $return Should this piece of data be output.
+	 * @param {string}         $feature Feature key.
+	 * @param {string}         $type Type of view.
+	 * @param {object|boolean} $event Event object if in event context.
+	 *
+	 * @return bool
+	 */
+	return apply_filters( 'mc_output_is_visible', $return, $feature, $type, $event );
+}
