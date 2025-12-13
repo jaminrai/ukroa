@@ -1,4 +1,15 @@
-=== Newscrunch ===
+collor palate:
+
+base color: #47663b
+
+Light: #8CAE7F
+more light1: #E8ECD7
+light2: #EED3B1
+
+dark: #1E4210
+more dark: #1F4529
+
+=== UKROA ===
 
 Contributors: spicethemes
 Requires at least: 5.4

@@ -5096,3 +5096,21 @@ a, .button {
   }
 }
 /* ====  End of Membership Plans Styling with member- prefix ==== */
+
+
+
+/* logo  */
+@media only screen and (max-width: 992px) {
+    .custom-logo, .dark-custom-logo {
+        width: 80px !important;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .custom-logo, .dark-custom-logo {
+        width: 80px !important;
+        height: auto;
+    }
+}
+/* end of the logo */
