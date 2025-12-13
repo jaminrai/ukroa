@@ -4910,9 +4910,9 @@ body .spnc-advertisement.all img{
 width:1280px;
 }
 
-.header-sidebar.header-1 .spnc-navbar .spnc-container {
+/*.header-sidebar.header-1 .spnc-navbar .spnc-container {
     background-color: #354e2b;
-}
+}*/
 
 body .spnc-custom .dropdown-menu, body .spnc-custom .open .dropdown-menu, .header-6 .spnc-custom .spnc-nav .dropdown-menu li > a:before{
     background:#1d2a5b;
@@ -5114,3 +5114,27 @@ a, .button {
     }
 }
 /* end of the logo */
+
+
+
+/* Ensure all content inside remains fully opaque */
+.spnc-navbar,
+
+
+.spnc-nav a,
+.spnc-nav li,
+.custom-logo,
+.dark-custom-logo,
+.spnc-menu-open,
+.paypal-donations,
+.search-icon {
+    /*opacity: 1 !important;*/
+    /*background: transparent !important;*/
+}
+
+/* Extra safety: force logo and menu text to stay solid */
+
+
+.header-1 .spnc-custom .spnc-navbar{
+  background: transparent !important;
+}
