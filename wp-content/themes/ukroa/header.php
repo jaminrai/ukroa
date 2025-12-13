@@ -15,6 +15,23 @@
 	            echo '<link rel="pingback" href=" '.esc_url(get_bloginfo( 'pingback_url' )).' ">';
 	        endif;
 		wp_head(); ?>
+		<?php if(is_front_page()): ?>
+	
+<style type="text/css">
+	/*transparent*/
+.spnc-navbar{
+    position: absolute !important;
+}
+.header-1 .spnc-custom .spnc-navbar{
+  background: transparent !important;
+}
+/*end of transparent*/
+.header-sidebar.header-1 .spnc-navbar .spnc-container
+{
+ background: rgba(3, 63, 20, 0.61) !important;
+}
+</style>
+		<?php endif; ?>
 	</head>
 
 <?php do_action('newscrunch_wide_boxed_layout');

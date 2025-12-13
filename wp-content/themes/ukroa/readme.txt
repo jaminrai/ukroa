@@ -26,7 +26,7 @@ dynamic-style bata lyako
 =======================
 
 collor palate:
-
+--dark-green: #1F4529;
 base color: #47663b
 
 Little darker: #354e2b

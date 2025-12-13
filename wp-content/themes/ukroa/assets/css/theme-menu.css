@@ -548,9 +548,10 @@ body.page-template-template-overlaped .header-overlapped {background-color: tran
 .header-2.header-sidebar {max-width: 100%;}
 .header-sidebar.header-1 .spnc-navbar .spnc-container
 {
+    background: var(--medium-green);
     box-shadow: 0 10px 20px 0 rgb(20 18 35 / 10%);
     padding: 12px 0px;border-radius: 50px;
- background: rgba(53, 78, 43, 0.65) !important;}
+}
 .header-sidebar.header-1 .spnc-custom .spnc-navbar {border-radius: 50px;}
 @media (min-width: 1101px){.header-1 .spnc-custom .spnc-container {gap: 20px;width: unset;}}
 @media (max-width:1100px){.header-2.header-sidebar .custom-logo, .header-2.header-sidebar .dark-custom-logo {margin-top: 8px;}}

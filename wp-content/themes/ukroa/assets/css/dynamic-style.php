@@ -21,7 +21,3 @@ background:url("<?php echo $favicon; ?>");
 
   }
 
-.spnc-navbar{
-    position: absolute !important;
-}
-
