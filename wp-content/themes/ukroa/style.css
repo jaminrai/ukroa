@@ -76,6 +76,7 @@ Tags: blog, custom-logo, custom-menu, featured-images, threaded-comments, transl
   --white: #E8ECD7;
   --green-white: #EED3B1;
   --orange: #FFA500;
+  --yellow:#ffcc00;
   --light-yellow: #006666;
   --teal-footer: #008080;
   --bg-color: #f8fafc;
@@ -5122,4 +5123,9 @@ a, .button {
 /* end of the logo */
 
 
+/*padding for menu to zero*/
+.header-sidebar.header-1 .spnc-custom .spnc-navbar{ padding:0; }
 
+.header-1 .spnc-topbar{
+  background: var(--yellow);
+}

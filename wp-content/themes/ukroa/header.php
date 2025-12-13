@@ -16,21 +16,55 @@
 	        endif;
 		wp_head(); ?>
 		<?php if(is_front_page()): ?>
-	
-<style type="text/css">
-	/*transparent*/
+<style>
+/* Default state: semi-transparent green when at top (scroll < 100px) */
+.spnc-navbar .spnc-container {
+    background: rgba(3, 63, 20, 0.68) !important;
+    transition: background 0.4s ease;   /* smooth change */
+}
+
+/* When scrolled ≥ 100px: fully solid green */
+.spnc-navbar .spnc-container.solid {
+    background: rgb(53, 78, 43) !important;   /* same green, but 100% opaque */
+    box-shadow: 0 2px 15px rgba(0,0,0,0.15); /* optional: nice shadow when solid */
+}
 .spnc-navbar{
     position: absolute !important;
 }
 .header-1 .spnc-custom .spnc-navbar{
   background: transparent !important;
 }
-/*end of transparent*/
-.header-sidebar.header-1 .spnc-navbar .spnc-container
-{
- background: rgba(3, 63, 20, 0.61) !important;
+/* Ensure no child element inherits unwanted transparency */
+.spnc-navbar .spnc-container > * {
+    position: relative;
+    z-index: 2;
 }
+
 </style>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".spnc-navbar .spnc-container");
+
+    if (!container) return; // safety check
+
+    function updateNavbar() {
+        if (window.scrollY >= 100) {
+            container.classList.add("solid");
+        } else {
+            container.classList.remove("solid");
+        }
+    }
+
+    // Run immediately on load
+    updateNavbar();
+
+    // Run on every scroll
+    window.addEventListener("scroll", updateNavbar);
+});
+</script>
+
 		<?php endif; ?>
 	</head>
 
