@@ -173,7 +173,7 @@ function newscrunch_hedder_full_layout(){
            @media (min-width: 1200px){
            	.spnc-topbar{padding:0 50px;}
            	.header-sidebar .spnc-container,.header-1 .spnc-custom .spnc-navbar{max-width: 100%;}
-           	.header-sidebar.header-1 .spnc-navbar .spnc-container {padding: 12px 50px;}
+           	.header-sidebar.header-1 .spnc-navbar .spnc-container {padding: 5px 45px;}
            }
            .stickymenu {
            	max-width: 100%;

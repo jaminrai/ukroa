@@ -1,6 +1,36 @@
+dynamic-style bata lyako
+
+
+.ukroa-mission-bg {
+  background: linear-gradient(rgba(5, 51, 102, 0.7), rgba(3, 3, 70, 0.97)), 
+                url('<?php echo esc_url($mission_bg); ?>?w=2000&h=1200&fit=crop') center/cover no-repeat;
+}
+
+<!-- .header-1.spnc-header-center .spnc-navbar .spnc-header{
+  background-image: url("<?php echo esc_url($header_image); ?>");
+  } -->
+  
+  <!-- header 2 -->
+<!--   .header-sidebar.header-1 .spnc-navbar .spnc-container{
+    background-image: url("<?php echo esc_url($header_image); ?>");
+ -->
+<!--   }
+.header-sidebar.header-1 .spnc-navbar .spnc-container{
+ background-image: url("<?php echo esc_url($header_image); ?>");
+} -->
+
+<!-- end of header 2 -->
+
+
+
+=======================
+
 collor palate:
 
 base color: #47663b
+
+Little darker: #354e2b
+  
 
 Light: #8CAE7F
 more light1: #E8ECD7
