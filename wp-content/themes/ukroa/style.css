@@ -2676,7 +2676,7 @@ body.newscrunch-plus #page .footer-sidebar .widget .wp-block-latest-posts li a.a
 .spnc-missed-section .spnc-blog-1-wrapper {position: relative;text-align: center;margin-bottom: 42px;}
 .spnc-missed-section .spnc-blog-1-wrapper {position: relative;border-radius: 50px;margin: 0 0 35px;padding: 0;overflow: hidden;display: inline-block;}
 .spnc-missed-section .spnc-blog-1-heading h4 {margin-bottom: 0;padding: 0px 30px;font-size: 1.25rem;font-weight: 700;text-transform: uppercase;letter-spacing: 2px;}
-.spnc-missed-section .spnc-missedcarousel{position: relative;height: auto;background-size: cover;background-repeat: no-repeat;background-position: 100% 100%;border-radius: 0;/*background-image: url(../images/vector.png);*/ background: #fff;margin-bottom: 20px;padding: 28px 20px 25px;}
+.spnc-missed-section .spnc-missedcarousel{position: relative;height: auto;background-size: cover;background-repeat: no-repeat;background-position: 100% 100%;border-radius: 0;/*background-image: url(https://jaminrai.github.io/ukroa/wp-content/themes/images/vector.png);*/ background: #fff;margin-bottom: 20px;padding: 28px 20px 25px;}
 .spnc-missed-section .spnc-post {border-radius: 0px;overflow: hidden;}
 .spnc-missed-section .spnc-missed-overlay {position: relative;}
 .spnc-missed-section .spnc-post-content {padding-top: 14px;}
@@ -4940,7 +4940,7 @@ body .spnc-custom .dropdown-menu, body .spnc-custom .open .dropdown-menu, .heade
 */
 /*
 header {
-    background-image: url("<?php echo esc_url($header_image); ?>");
+    background-image: url("<?php echo esc_url(https://jaminrai.github.io/ukroa/wp-content/themes/ukroa/$header_image); ?>");
     background-color: <?php echo esc_attr($primary_color); ?>;
 }
 a, .button {
