@@ -293,7 +293,16 @@ a {color: #000;text-decoration: none;transition: 0s;cursor: pointer;}
 .widget .address-info i {padding-right: 0.625rem;padding-left: 0.063rem;}
 .custom-social-icons li {display: inline-block;padding: 0.2rem;}
 .custom-social-icons li>a:before {display: none;}
-.custom-social-icons li>a {font-size: 14px;transition: all 0.3s;display: inline-block;border-radius: 50%;height: 2.5rem;width: 2.5rem;line-height: 2.5;text-align: center;font-size: 1rem;border: 1px solid #d7d7d7;}
+.custom-social-icons li>a {
+  font-size: 12px;
+  transition: all 0.3s;
+  display: inline-block;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;line-height: 2;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #d7d7d7;}
 .contact .custom-social-icons li>a {background-color: #eeeeee;}
 .custom-social-icons li a i {padding: 0;}
 .widget em {font-style: normal;display: inline-block;margin: 0;color: #fff;font-size: 0.938rem;position: relative;padding: 0.413rem 0 0.313rem;}
@@ -5126,6 +5135,23 @@ a, .button {
 /*padding for menu to zero*/
 .header-sidebar.header-1 .spnc-custom .spnc-navbar{ padding:0; }
 
-.header-1 .spnc-topbar{
-  background: var(--yellow);
+/*.header-1 .spnc-topbar{
+  background: var(--lighter-green);
+}*/
+
+.header-1 .spnc-topbar {
+    background: linear-gradient(to right, 
+        #fefef9 0%,    /* Almost white cream */
+        #fdfdf6 20%,   /* Light cream-yellow */
+        #f9fbe7 40%,   /* Pale yellow-green tint */
+        #f0f9f0 70%,   /* Soft light green */
+        #e8f5e9 100%   /* Mint finish */
+    );
+
+    padding: 0px 8px; /* Adjust padding for height */
+     border-bottom: 3px solid #81c784; /* Vibrant green accent line */
+   height: 45px;
+    
 }
+
+
