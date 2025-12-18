@@ -12,7 +12,7 @@ $header_image = get_template_directory_uri() . '/assets/images/headerimage.jpg';
 $donate_image = get_template_directory_uri() . '/assets/images/donate_button.png';
 $donate_hover = get_template_directory_uri() . '/assets/images/donate_button_hover.png';
 $favicon = get_template_directory_uri() . '/assets/images/favicon.jpg';
-
+$wabuflag=get_template_directory_uri() . '/assets/images/wabu.jpg';
 
 ?>
 
@@ -21,3 +21,6 @@ background:url("<?php echo $favicon; ?>");
 
   }
 
+ .spnc-topbar::before {
+background-image: url("<?php echo $wabuflag; ?>");
+}

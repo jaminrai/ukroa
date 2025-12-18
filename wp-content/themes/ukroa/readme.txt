@@ -1,3 +1,44 @@
+ukroatopbar ko
+.topbar-content {
+    position: relative;
+    z-index: 3;
+}
+    .header-1 .spnc-topbar{
+      
+    }
+  .ukroa-topbar {
+    width: 100%;
+    height: 39px;
+    position: relative;
+    font-size: 13px;
+   
+}
+  
+  .ukroa-topbar:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    /*background-color: var(--yellow);*/
+    width: 50%;
+    height: 100%;
+}
+/*.ukroa_bg_left{ background:var(--yellow); width:100% }*/
+
+
+.ukroa-topbar:after {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 0px;
+    /*border-bottom: 39px solid var(--yellow);*/
+    border-left: 30px solid transparent;
+}
+.custom-social-icons li>a{
+  border-color:blue;
+}
+
+========================
 dynamic-style bata lyako
 
 

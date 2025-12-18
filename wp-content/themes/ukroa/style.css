@@ -65,6 +65,9 @@ Tags: blog, custom-logo, custom-menu, featured-images, threaded-comments, transl
 
 /* CSS Variables */
 :root {
+  --yellow: #ffc439;
+/*  --yellow: #ffcc00; ffc439*/
+  
   --dark-green: #1F4529;
   --darker-green: #1E4210;
   --more-darkgreen: #1F4529;
@@ -76,7 +79,7 @@ Tags: blog, custom-logo, custom-menu, featured-images, threaded-comments, transl
   --white: #E8ECD7;
   --green-white: #EED3B1;
   --orange: #FFA500;
-  --yellow:#ffcc00;
+
   --light-yellow: #006666;
   --teal-footer: #008080;
   --bg-color: #f8fafc;
@@ -87,6 +90,7 @@ Tags: blog, custom-logo, custom-menu, featured-images, threaded-comments, transl
   --nav-bg: #1f4529;
   --heading-dark: #333;
   --heading-blue: #135eab;
+  --blue:#04356f;
   --tag-bg: #135eab;
   --sub-heading: #ce6f1b;
 }
@@ -5133,7 +5137,11 @@ a, .button {
 
 
 /*padding for menu to zero*/
-.header-sidebar.header-1 .spnc-custom .spnc-navbar{ padding:0; }
+.header-sidebar.header-1 .spnc-custom .spnc-navbar{ 
+/*  padding:0;*/
+padding-top: 0;
+
+   }
 
 /*.header-1 .spnc-topbar{
   background: var(--lighter-green);
@@ -5148,9 +5156,9 @@ a, .button {
         #e8f5e9 100%   /* Mint finish */
     );
 
-    padding: 0px 8px; /* Adjust padding for height */
-     border-bottom: 3px solid #81c784; /* Vibrant green accent line */
-   height: 45px;
+    padding: 0px ; /* Adjust padding for height */
+     border-bottom: 3px solid  var(--yellow);/* Vibrant green accent line #81c784; */
+   
     
 }
 
