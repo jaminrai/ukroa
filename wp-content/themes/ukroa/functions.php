@@ -1102,3 +1102,184 @@ add_action('admin_menu', function() {
 });
 /*end of stop updating the theme*/
 
+// Enqueue JS for sign in sign up
+// Enqueue Script
+function ukroa_sign_scripts() {
+    wp_enqueue_script('ukroa-sign-js', get_stylesheet_directory_uri() . '/assets/js/ukroa-sign.js', array('jquery'), '1.3', true);
+    wp_localize_script('ukroa-sign-js', 'ukroa_sign_ajax', array(
+        'ajax_url' => admin_url('admin-ajax.php')
+    ));
+}
+add_action('wp_enqueue_scripts', 'ukroa_sign_scripts');
+
+// AJAX Login Handler
+add_action('wp_ajax_nopriv_ukroa_sign_login', 'ukroa_sign_login_handler');
+function ukroa_sign_login_handler() {
+    $creds = array(
+        'user_login'    => sanitize_text_field($_POST['username']),
+        'user_password' => $_POST['password'],
+        'remember'      => true
+    );
+
+    $user = wp_signon($creds, false);
+
+    if (is_wp_error($user)) {
+        wp_send_json_error($user->get_error_message());
+    } else {
+        wp_send_json_success();
+    }
+}
+
+// AJAX Signup Handler
+add_action('wp_ajax_nopriv_ukroa_sign_signup', 'ukroa_sign_signup_handler');
+function ukroa_sign_signup_handler() {
+    $first_name = sanitize_text_field($_POST['first_name']);
+    $last_name  = sanitize_text_field($_POST['last_name']);
+    $username   = sanitize_user($_POST['username']);
+    $email      = sanitize_email($_POST['email']);
+    $phone      = sanitize_text_field($_POST['phone']);
+    $password   = $_POST['password'];
+    $bio        = sanitize_textarea_field($_POST['bio']);
+
+    // Required fields check
+    if (empty($first_name) || empty($last_name) || empty($username) || empty($email) || empty($phone) || empty($password)) {
+        wp_send_json_error('All required fields must be filled.');
+        return;
+    }
+
+    if (username_exists($username)) {
+        wp_send_json_error('Username already taken.');
+        return;
+    }
+
+    if (email_exists($email)) {
+        wp_send_json_error('Email already registered.');
+        return;
+    }
+
+    // Create user
+    $user_id = wp_create_user($username, $password, $email);
+
+    if (is_wp_error($user_id)) {
+        wp_send_json_error('Could not create user. Try different username/email.');
+        return;
+    }
+
+    // Set role: Subscriber (read-only)
+    $user = new WP_User($user_id);
+    $user->set_role('subscriber');
+
+    // Update profile data
+    wp_update_user(array(
+        'ID'          => $user_id,
+        'first_name'  => $first_name,
+        'last_name'   => $last_name,
+        'description' => $bio
+    ));
+
+    update_user_meta($user_id, 'billing_phone', $phone);
+
+    // Upload profile image
+    if (!empty($_FILES['profile_image']['name'])) {
+        require_once(ABSPATH . 'wp-admin/includes/file.php');
+        require_once(ABSPATH . 'wp-admin/includes/media.php');
+        require_once(ABSPATH . 'wp-admin/includes/image.php');
+
+        $attach_id = media_handle_upload('profile_image', $user_id);
+        if (!is_wp_error($attach_id)) {
+            update_user_meta($user_id, 'wp_user_avatar', $attach_id);
+        }
+    }
+
+    // Notify Admin (email sent to site admin)
+    wp_new_user_notification($user_id, null, 'admin');
+
+    wp_send_json_success();
+}
+/*end of sign in sign up*/
+
+/*display mobile number*/
+// Add Phone column to Users list
+add_filter('manage_users_columns', 'ukroa_add_phone_column_to_users');
+function ukroa_add_phone_column_to_users($columns) {
+    $columns['phone'] = 'Phone Number';
+    return $columns;
+}
+
+// Populate the column
+add_filter('manage_users_custom_column', 'ukroa_show_phone_column_content', 10, 3);
+function ukroa_show_phone_column_content($value, $column_name, $user_id) {
+    if ($column_name === 'phone') {
+        return get_user_meta($user_id, 'billing_phone', true);
+    }
+    return $value;
+}
+/* end of mobile phone*/
+
+
+/*Menu for logged in log in only Show menu item to:*/
+// Add a custom field (dropdown) to menu items
+function add_menu_role_visibility_field($item_id, $item) {
+    // Get current saved value (if any)
+    $menu_role = get_post_meta($item_id, '_menu_role_visibility', true);
+    if (empty($menu_role)) $menu_role = 'anyone'; // default
+    ?>
+    <p class="field-menu-role-visibility description description-wide">
+        <label for="edit-menu-role-visibility-<?php echo $item_id; ?>">
+            <?php _e('Show menu item to:'); ?><br />
+            <select id="edit-menu-role-visibility-<?php echo $item_id; ?>" name="menu_role_visibility[<?php echo $item_id; ?>]" class="widefat">
+                <option value="anyone" <?php selected($menu_role, 'anyone'); ?>><?php _e('Anyone (public)'); ?></option>
+                <option value="logged_in" <?php selected($menu_role, 'logged_in'); ?>><?php _e('Logged-in Users Only'); ?></option>
+                <option value="subscriber" <?php selected($menu_role, 'subscriber'); ?>><?php _e('Subscriber or higher'); ?></option>
+                <option value="contributor" <?php selected($menu_role, 'contributor'); ?>><?php _e('Contributor or higher'); ?></option>
+                <option value="author" <?php selected($menu_role, 'author'); ?>><?php _e('Author or higher'); ?></option>
+                <option value="editor" <?php selected($menu_role, 'editor'); ?>><?php _e('Editor or higher'); ?></option>
+                <option value="administrator" <?php selected($menu_role, 'administrator'); ?>><?php _e('Administrator only'); ?></option>
+            </select>
+            <br /><span class="description"><?php _e('Menu item will be hidden from users with lower access.'); ?></span>
+        </label>
+    </p>
+    <?php
+}
+add_action('wp_nav_menu_item_custom_fields', 'add_menu_role_visibility_field', 10, 2);
+
+// Save the selected value when menu is updated
+function save_menu_role_visibility($menu_id, $menu_item_db_id) {
+    if (isset($_POST['menu_role_visibility'][$menu_item_db_id])) {
+        $value = sanitize_text_field($_POST['menu_role_visibility'][$menu_item_db_id]);
+        update_post_meta($menu_item_db_id, '_menu_role_visibility', $value);
+    } else {
+        delete_post_meta($menu_item_db_id, '_menu_role_visibility');
+    }
+}
+add_action('wp_update_nav_menu_item', 'save_menu_role_visibility', 10, 2);
+
+// Hide menu items based on selected role
+function filter_menu_by_role($items, $args) {
+    $user = wp_get_current_user();
+    $user_roles = $user->roles ?? [];
+
+    $role_capability_map = [
+        'anyone'         => true,
+        'logged_in'      => is_user_logged_in(),
+        'subscriber'     => current_user_can('read'),           // Subscriber+
+        'contributor'    => current_user_can('edit_posts'),     // Contributor+
+        'author'         => current_user_can('publish_posts'),  // Author+
+        'editor'         => current_user_can('edit_pages'),     // Editor+
+        'administrator'  => current_user_can('manage_options'), // Admin only
+    ];
+
+    foreach ($items as $key => $item) {
+        $required_role = get_post_meta($item->ID, '_menu_role_visibility', true);
+        if (empty($required_role)) $required_role = 'anyone';
+
+        // If the condition is not met, remove the item
+        if ($role_capability_map[$required_role] !== true) {
+            unset($items[$key]);
+        }
+    }
+
+    return $items;
+}
+add_filter('wp_nav_menu_objects', 'filter_menu_by_role', 10, 2);
+/*enf of role Show menu item to:*/

@@ -39,114 +39,6 @@ if(empty($newscrunch_social_icon_data))
 }
 ?>
 
-<!-- start of the test -->
-<style>
-	@media (min-width: 768px) {
-/* Main topbar */
-.spnc-topbar {
-    position: relative;
-    height: 40px;
-    width: 100%;
-    background: #f8f9fa; /* light background fallback */
-    overflow: hidden;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-/* Repeating background image layer (flags) */
-.spnc-topbar::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    background-repeat: repeat-x;
-    background-position: center center;
-    background-size: auto 100%;
-    z-index: 1;
-    opacity: 0.9; /* slight transparency so content stands out more */
-}
-
-/* Long soft fade ONLY on the background image */
-.spnc-topbar::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to right,
-        #fff 0%,
-        var(--yellow) 10%,
-        transparent 20%,
-        transparent 65%,
-        var(--yellow) 85%,
-        #fff 100%
-    );
-    pointer-events: none;
-    z-index: 2; /* above the image, below the content */
-}
-
-/* Ensure all content (left language + right social icons) is fully visible */
-.spnc-topbar .spnc-container {
-    position: relative;
-    z-index: 10; /* high enough to be above everything */
-   
-    /*justify-content: space-between;*/
-   
-}
-
-
-
-
-/* Left language section - extreme left with right-slanting edge */
-.spnc-topbar .head-contact-info {
-    position: relative;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 50px 3px 20px; /* Padding for content + space for slant */
-    background: var(--yellow); /* Light green - adjust shade as needed */
-    clip-path: polygon(0 0, 92% 0, 80% 100%, 0 100%); /* Slants right edge inward */
-    z-index: 10;
-
-    margin:0 !important;
-    color: #333;
-    font-weight: 500;
-}
-
-/* Right social icons - extreme right with left-slanting edge */
-.spnc-topbar .custom-social-icons {
-    position: relative;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 20px 0 80px; /* Padding for content + space for slant */
-    background: var(--yellow); /* Same light green */
-    clip-path: polygon(20% 0, 100% 0, 100% 100%, 8% 100%); /* Slants left edge inward */
-    z-index: 10;
-    gap: 15px;
-}
-
-/* Text/icon visibility on green background */
-.spnc-topbar .head-contact-info a,
-.spnc-topbar .head-contact-info span,
-.spnc-topbar .custom-social-icons a,
-.spnc-topbar .custom-social-icons i {
-    color: #333 !important;
-    font-size: 14px;
-    opacity: 1;
-}
-
-/* Optional: Hover effect */
-.spnc-topbar .custom-social-icons a:hover {
-    opacity: 0.7;
-}
-
-}
-</style>
 
 <div class="spnc-topbar ukroa-topbar">
 	<div class="spnc-container">
@@ -197,12 +89,70 @@ if(empty($newscrunch_social_icon_data))
 				     	<?php endif;
 			    	} 
 			    } ?>
-			    <li><a href="#">
-			    	<i class="fa fa-sign-in"></i>
-                    </a></li>
+
+    <?php if (is_user_logged_in()) : ?>
+        <a href="<?php echo wp_logout_url(home_url()); ?>">
+            <i class="fa fa-sign-out"></i> Sign Out
+        </a>
+    <?php else : ?>
+        <a href="#" class="ukroa_sign_trigger">
+            <i class="fa fa-sign-in"></i> Sign In
+        </a>
+    <?php endif; ?>
+
+
 			</ul>
 		</aside>
 		<?php } ?>
 	</div>
 </div>
 <?php do_action('newscrunch_inside_header_ads', 'inside header');?>
+
+
+<!-- Ukroa Sign In / Sign Up Modal -->
+<div class="ukroa_sign_overlay" id="ukroa_sign_overlay"></div>
+
+<div class="ukroa_sign_modal" id="ukroa_sign_modal">
+    <div class="ukroa_sign_container">
+        
+        <!-- Login Form -->
+        <div class="ukroa_sign_form" id="ukroa_sign_login">
+            <h3>Sign In</h3>
+            <form id="ukroa_sign_login_form">
+                <input type="text" name="username" placeholder="Username or Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+                <p class="ukroa_sign_link">
+                    <a href="<?php echo wp_lostpassword_url(); ?>" target="_blank">Forgot Password?</a>
+                </p>
+                <p class="ukroa_sign_link">Don't have an account? 
+                    <a href="#" id="ukroa_sign_to_signup">Sign Up</a>
+                </p>
+                <div class="ukroa_sign_message"></div>
+            </form>
+        </div>
+
+        <!-- Signup Form (No Confirm Password) -->
+        <div class="ukroa_sign_form" id="ukroa_sign_signup" style="display:none;">
+            <h3>Sign Up (Reader Access)</h3>
+            <form id="ukroa_sign_signup_form" enctype="multipart/form-data">
+                <div class="ukroa_sign_two_cols">
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                    <input type="text" name="last_name" placeholder="Last Name" required>
+                </div>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Contact Number" required>
+                <input type="file" name="profile_image" accept="image/*">
+                <input type="password" name="password" placeholder="Password" required>
+                <textarea name="bio" placeholder="Bio (optional)" rows="3"></textarea>
+                <button type="submit">Sign Up</button>
+                <p class="ukroa_sign_link">
+                    <a href="#" id="ukroa_sign_to_login">← Back to Sign In</a>
+                </p>
+                <div class="ukroa_sign_message"></div>
+            </form>
+        </div>
+
+    </div>
+</div>

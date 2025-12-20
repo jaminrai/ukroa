@@ -65,8 +65,8 @@ Tags: blog, custom-logo, custom-menu, featured-images, threaded-comments, transl
 
 /* CSS Variables */
 :root {
-  --yellow: #ffc439;
-/*  --yellow: #ffcc00; ffc439*/
+  --yellow: #f99b3b;
+/*  --yellow: #ffcc00; ffc439 ; f99b3b; faa525*/
   
   --dark-green: #1F4529;
   --darker-green: #1E4210;
@@ -295,18 +295,18 @@ a {color: #000;text-decoration: none;transition: 0s;cursor: pointer;}
   .spnc.spnc-custom .header-button {display: inline-block;margin: 0;}
 }
 .widget .address-info i {padding-right: 0.625rem;padding-left: 0.063rem;}
-.custom-social-icons li {display: inline-block;padding: 0.2rem;}
+.custom-social-icons li {display: inline-block;padding: 0 0 0.2rem;}
 .custom-social-icons li>a:before {display: none;}
 .custom-social-icons li>a {
   font-size: 12px;
   transition: all 0.3s;
   display: inline-block;
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;line-height: 2;
+  height: 1.9rem;
+  width: 1.9rem;line-height: 2;
   text-align: center;
-  font-size: 1rem;
-  border: 1px solid #d7d7d7;}
+  background: #fff;
+  border: 1px solid #ffffff;}
 .contact .custom-social-icons li>a {background-color: #eeeeee;}
 .custom-social-icons li a i {padding: 0;}
 .widget em {font-style: normal;display: inline-block;margin: 0;color: #fff;font-size: 0.938rem;position: relative;padding: 0.413rem 0 0.313rem;}
@@ -5163,3 +5163,337 @@ padding-top: 0;
 }
 
 
+/*topbar style*/
+  @media (min-width: 768px) {
+/* Main topbar */
+.spnc-topbar {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background: #f8f9fa; /* light background fallback */
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Repeating background image layer (flags) */
+.spnc-topbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-size: auto 100%;
+    z-index: 1;
+    opacity: 0.9; /* slight transparency so content stands out more */
+}
+
+/* Long soft fade ONLY on the background image */
+.spnc-topbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        #fff 0%,
+        var(--yellow) 10%,
+        transparent 20%,
+        transparent 65%,
+        var(--yellow) 85%,
+        #fff 100%
+    );
+    pointer-events: none;
+    z-index: 2; /* above the image, below the content */
+}
+
+/* Ensure all content (left language + right social icons) is fully visible */
+.spnc-topbar .spnc-container {
+    position: relative;
+    z-index: 10; /* high enough to be above everything */
+   
+    /*justify-content: space-between;*/
+   
+}
+
+
+
+
+/* Left language section - extreme left with right-slanting edge */
+.spnc-topbar .head-contact-info {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px 3px 20px; /* Padding for content + space for slant */
+    background: linear-gradient(75deg, #f99b3b, #faa525, #f99b3b);
+    /*#ffcc00; ffc439 ; f99b3b; faa525**/
+    /*background: var(--yellow);*/ /* Light green - adjust shade as needed */
+    clip-path: polygon(0 0, 92% 0, 80% 100%, 0 100%); /* Slants right edge inward */
+    z-index: 10;
+
+    margin:0 !important;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Right social icons - extreme right with left-slanting edge */
+.spnc-topbar .custom-social-icons {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 5px 80px; /* Padding for content + space for slant */
+    /*background: linear-gradient(45deg, #f99b3b, #faa525, #f99b3b);*/
+      background: var(--yellow);    /* Same light green */
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 8% 100%); /* Slants left edge inward */
+    z-index: 10;
+    gap: 15px;
+}
+
+
+
+/* Text/icon visibility on green background */
+.spnc-topbar .head-contact-info a,
+.spnc-topbar .head-contact-info span,
+.spnc-topbar .custom-social-icons a,
+.spnc-topbar .custom-social-icons i {
+    color: #333 !important;
+    font-size: 14px;
+    opacity: 1;
+}
+
+/* Optional: Hover effect */
+.spnc-topbar .custom-social-icons a:hover {
+    opacity: 0.7;
+}
+
+}
+/*end of topbar style*/
+
+/*contact form*/
+.ukroa-simple-contact {
+    width: 100%;
+    padding: 30px 0; /* Reduced outer padding for less total height */
+}
+
+.ukroa-simple-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: stretch; /* Forces map and form to match height */
+    max-width: 1200px;
+    margin: 0 auto; /* Optional: center the row */
+}
+
+.ukroa-simple-map,
+.ukroa-simple-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex; /* Enables full height control */
+    flex-direction: column;
+}
+
+.ukroa-simple-map iframe {
+    width: 100%;
+    height: 100%; /* Takes full container height */
+    min-height: 380px; /* Compact fixed height – adjust if needed (e.g., 350px for even shorter) */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex-grow: 1; /* Fills the container */
+}
+
+.ukroa-simple-form {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 18px 20px; /* Slightly reduced padding for compactness */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers form content for balanced look */
+}
+
+.ukroa-simple-form .wpcf7-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Tighter gaps between fields */
+    flex-grow: 1;
+}
+
+/* Further compactness */
+.ukroa-simple-form .wpcf7-form p {
+    margin: 0;
+}
+
+/* Keep textarea short */
+.ukroa-simple-form .wpcf7-form textarea {
+    min-height: 50px !important;
+    max-height: 100px;
+    padding: 8px 12px; /* Reduced internal padding */
+}
+
+/* Mobile: Hide map, compact form */
+@media (max-width: 768px) {
+    .ukroa-simple-contact {
+        padding: 20px 0;
+    }
+    
+    .ukroa-simple-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .ukroa-simple-map {
+        display: none;
+    }
+    
+    .ukroa-simple-form {
+        padding: 15px;
+        border: none;
+        box-shadow: none;
+    }
+    
+    .ukroa-simple-map iframe {
+        min-height: 300px; /* Fallback if map ever shown on mobile */
+    }
+}
+/*end of homepage contact*/
+
+/* Ukroa Sign Modal - Minimal & Stylish */
+/* Ukroa Sign Modal - Clean & Fully Responsive */
+.ukroa_sign_overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9998;
+    backdrop-filter: blur(5px);
+}
+
+.ukroa_sign_modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    z-index: 9999;
+}
+
+.ukroa_sign_container {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.ukroa_sign_form h3 {
+    margin: 0 0 30px;
+    font-size: 26px;
+    color: #222;
+}
+
+.ukroa_sign_two_cols {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.ukroa_sign_two_cols input {
+    flex: 1;
+}
+
+.ukroa_sign_form input,
+.ukroa_sign_form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.ukroa_sign_form input:focus,
+.ukroa_sign_form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 4px rgba(0,123,255,0.15);
+}
+
+.ukroa_sign_form textarea {
+    resize: vertical;
+}
+
+.ukroa_sign_form button {
+    width: 100%;
+    padding: 16px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.ukroa_sign_form button:hover {
+    background: #0056b3;
+}
+
+.ukroa_sign_link {
+    margin: 20px 0 0;
+    font-size: 14px;
+}
+
+.ukroa_sign_link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.ukroa_sign_link a:hover {
+    text-decoration: underline;
+}
+
+.ukroa_sign_message {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ukroa_sign_message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.ukroa_sign_message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .ukroa_sign_container {
+        padding: 30px 20px;
+    }
+    .ukroa_sign_two_cols {
+        flex-direction: column;
+    }
+    .ukroa_sign_form h3 {
+        font-size: 24px;
+    }
+}

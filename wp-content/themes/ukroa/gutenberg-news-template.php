@@ -537,7 +537,7 @@ document.addEventListener('DOMContentLoaded', function () {
     margin: 0 auto;
   }
   
-  .iwgia-work-section h2 {
+  .iwgia-work-section h2,  .iwgia-connected-section h2  {
     text-align: center;
     font-size: 2.5rem;
     color: #2E7D32;
@@ -785,6 +785,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <?php echo do_shortcode('[tmm name="board-of-assembly-members"]'); ?>
 
+<?php echo do_shortcode('[tmm name="advisors-media-co-ordinator"]'); ?>
+<?php echo do_shortcode('[tmm name="patrons"]'); ?>
+
+
+
         <a href="<?php echo esc_url( get_permalink( get_page_by_path('team') ) ); ?>" class="view-all">View All Teams</a>
     </div>
   </div>
@@ -854,12 +859,7 @@ document.addEventListener('DOMContentLoaded', function () {
     text-align: center;
   }
   
-  .iwgia-connected-section h2 {
-    font-size: 2.5rem;
-    color: #303841;
-    margin-bottom: 20px;
-    font-weight: 600;
-  }
+
   
   .section-intro {
        text-align: center;
@@ -946,25 +946,26 @@ document.addEventListener('DOMContentLoaded', function () {
 <!-- end of stay connected -->
 
 
+
 <section class="spnc-page-section-space spnc-missed-section spncmc-1 spncmc-selective" style="margin-top: 20px;">
     <div class="spnc-container">
  
 
-       <div class="spnc-row">
-            <div class="spnc-col-1">
-            <div class="spnc-missedcarousel spnc-common-widget-area">
-                                <div class="spnc-main-wrapper">
-                    <div class="spnc-main-wrapper-heading">
-                        <h2 class="widget-title spncmc-head">Category Title</h2>
-                    </div>
-                </div>
-                                <!--main carousel element-->
-             
-                <!--element to hold filtered out items-->
-                <div id="spnc-blog-hidden" class="hide"></div>
-            </div>
-        </div>    
+      <div class="ukroa-simple-contact">
+    <div class="ukroa-simple-row">
+        <div class="ukroa-simple-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1476488.8181899202!2d-71.066163!3d42.425096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e371638a44d3e9%3A0x68895d9987691b55!2s229%20MA-60%2C%20Malden%2C%20MA%2002148!5e1!3m2!1sen!2sus!4v1760772621505!5m2!1sen!2sus"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="ukroa-simple-form">
+            
+            <?php echo do_shortcode('[contact-form-7 id="f32c516" title="Contact form 1"]'); ?>
+        </div>
     </div>
+</div>
 
 </div>
 </section>

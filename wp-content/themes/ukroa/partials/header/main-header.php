@@ -26,8 +26,25 @@
 					</div>
 				</div>
 				<!-- /.spnc-collapse -->
+								<style type="text/css">
+
+.spnc-head-wrap {
+    display: flex;
+    align-items: center;     /* Vertically centers the content */
+    justify-content: center; /* Optional: horizontally centers if it's alone */
+    padding: 0;
+    height: 100%;            /* Ensure it fills the header height if needed */
+    min-height: 40px;        /* Optional: fallback minimum height */
+}
+
+.spnc-head-wrap input[type="image"] {
+    height: 40px !important; /* Your desired height */
+    width: auto !important;
+    object-fit: contain;
+}
+</style>
 <!-- Make it inline-block -->
-<div class="spnc-head-wrap" style="vertical-align:top;margin-top:25px;padding:0;">
+<div class="spnc-head-wrap" >
     <?php 
     if ( shortcode_exists( 'paypal-donation' ) ) {echo do_shortcode('[paypal-donation]');} ?>
 </div>
