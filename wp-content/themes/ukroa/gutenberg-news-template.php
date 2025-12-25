@@ -37,13 +37,6 @@ endif;
 
 <?php } ?>
 
-   
-
-
-
-
-
-
 
 <!-- UKROA Main Slider - Bottom Banner Style (Clean & Professional) -->
 <section class="ukroa-main-slider-section">
